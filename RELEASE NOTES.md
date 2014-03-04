@@ -1,4 +1,37 @@
-Version 1.5 beta
+Version 1.5.6
+
+- Fixed performance regression introduced in version 1.5.5
+- Reverted fix for translucent overlapping text for performance reasons 
+- Improved performance when using a background color on the label
+
+Version 1.5.5
+
+- Fixed infinite loop when targeting iOS7+
+- Fixed text color bug when targeting iOS7+
+- Fixed linewrapping and clipping issues when targeting iOS7+
+- Translucent text is no longer rendered incorrectly if it overlaps itself due to tight kerning
+- Baseline adjustment now works correctly if not using custom linespacing
+- Now conforms to -Weverything warning level
+
+Version 1.5.4
+
+- Fixed distortion when using textInset with gradient
+
+Version 1.5.3
+ 
+- Fixed line wrap issue when using character wrap
+- Now compiles for iOS 7+ without deprecation warnings
+- Now complies with -Wall and -WExtra warning levels
+
+Version 1.5.2
+
+- Fixed a bug in the autoshrink logic when creating labels programatically (as opposed to using a nib)
+
+Version 1.5.1
+
+- Fixed rounding error that caused layout for multiline labels to not work correctly
+
+Version 1.5
 
 - Added innerShadowBlur property
 - Added characterSpacing property

@@ -12,14 +12,8 @@
 
 @implementation FXLabelExampleAppDelegate
 
-@synthesize window;
-@synthesize viewController;
-
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (BOOL)application:(__unused UIApplication *)application didFinishLaunchingWithOptions:(__unused NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-     
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
